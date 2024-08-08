@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>336 Hours Timer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Development</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-    <div id="timer">
-        <p id="countdown">14d 00h 00m 00s</p>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <div class="logo">PODA MYRE</div>
+        <nav>
+            <button class="sign-up">Coming soon</button>
+        </nav>
+    </header>
+    <main>
+        <div class="video-container">
+            <div class="video-box" id="stranger-video-container">
+                <video id="remoteVideo" autoplay></video>
+                <div class="message-container" id="stranger-messages"></div>
+            </div>
+            <div class="video-box" id="my-video-container">
+                <video id="localVideo" autoplay muted></video>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="skip" id="skipButton">Skip</button>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button class="enter" id="sendMessageButton">Enter</button>
+    </footer>
+    <script src="demo.js"></script>
 </body>
 </html>
